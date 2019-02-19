@@ -11,8 +11,7 @@ class Scraper
   end
 
   def get_courses
-    course_offerings = []
-    course_offerings << get_page.css("div #main #course-grid section article.post.same-height-left h2")
+    course_offerings = get_page.css("div #main #course-grid section article.post.same-height-left h2").text
     binding.pry
   end
 
