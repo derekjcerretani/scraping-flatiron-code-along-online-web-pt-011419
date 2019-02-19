@@ -17,7 +17,7 @@ class Scraper
   end
 
   def get_courses
-    course_offerings = get_page.css("div #main #course-grid section article.post.same-height-left h2").text
+    self.get_page.css(".post")
     #binding.pry
   end
 
